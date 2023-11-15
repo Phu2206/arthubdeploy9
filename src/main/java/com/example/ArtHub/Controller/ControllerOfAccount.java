@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = "https://arthubplatform1.azurewebsites.net/", maxAge = 3600)
 @RestController
 public class ControllerOfAccount implements IAccountController {
     private static final Path CURRENT_FOLDER = Paths.get(System.getProperty("user.dir"));

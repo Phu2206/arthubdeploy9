@@ -27,6 +27,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Controller
+@CrossOrigin(origins = "https://arthubplatform1.azurewebsites.net/", maxAge = 3600)
 @RequestMapping("/api")
 public class ControllerOfPaypal {
     public static final String URL_PAYPAL_SUCCESS = "pay/success";

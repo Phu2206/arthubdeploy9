@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = "https://arthubplatform1.azurewebsites.net/", maxAge = 3600)
 @RequestMapping("/course")
 public class ControllerOfEnrolment {
     @Autowired

@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = "https://arthubplatform1.azurewebsites.net/", maxAge = 3600)
 @RestController
 public class ControllerOfLearner implements ILearnerController {
     @Autowired

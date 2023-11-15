@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 @RestController
+@CrossOrigin(origins = "https://arthubplatform1.azurewebsites.net/", maxAge = 3600)
 @RequestMapping("/api/v1/files")
 public class ControllerOfFile {
 

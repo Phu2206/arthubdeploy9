@@ -29,7 +29,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-@CrossOrigin(origins = "http://localhost:3000/")
+@CrossOrigin(origins = "https://arthubplatform1.azurewebsites.net/")
 @RestController
 @RequestMapping("/api")
 public class AccountController {
