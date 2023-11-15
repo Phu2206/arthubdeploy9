@@ -1,0 +1,52 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://arthubplatform1-server.database.windows.net:1433;database=arthubplatform1-database;user=arthubplatform1-server-admin@arthubplatform1-server;password=O538U4E567D612X4$;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+  jpa:
+    show-sql: true
+    hibernate:
+      dialect : org.hibernate.dialect.SQLServer2019Dialect
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  servlet:
+    multipart:
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+  mail:
+    host: smtp.gmail.com
+    username: ArtHub310@gmail.com
+    password: lpkouutkcrjkzaot
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    port: 587
+  paypal:
+    mode: sandbox
+    client:
+      app: AfV9lcWGBC_QhyebNl_snhFXXf_KKbgpCGF0SibWwA9qW3wNODLqzPTaeosVCUGSnugc2XU2e88ei97-
+      secret: EOiBSMKocBIiJX22DzC93qMBlWQhvqdGdSwVzQQW-guKik473vQ2rmbg2aF4hgQxMa10-r-p-8zqfejx
+  jackson:
+    default-property-inclusion: non_null
+    cloud:
+      gcp:
+        project-id: arthub-gcp-project
+        credentials:
+          location: classpath:arthub-gcp-project-ced24a31b2ad.json
+        bucket:
+          name: arthub-bucket
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  info:
+    env:
+      enable: true
+
+
+server:
+  port: 8080
